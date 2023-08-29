@@ -17,7 +17,7 @@ jobs:
 
 
       - name: 'login to docker'
-        run: docker login --username hamdoun --password dckr_pat_vUwzmt6cJm8eu-BTojRtpkwIVSA
+        run: docker login --username ${{ secret.DOCKER_USERNAME}}   --password ${{ secret.DOCKER_TOKEN}} 
 
       - name: 'Testng Printing'
         run: echo hamdoun
