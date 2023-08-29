@@ -13,11 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-       
-      - name: 'Testing githup action'
-        run:   pwd
+      - uses: actions/checkout@v3
+
+
+      - name: 'login to docker'
+        run: docker login --username hamdoun --password dckr_pat_vUwzmt6cJm8eu-BTojRtpkwIVSA
 
       - name: 'Testng Printing'
         run: echo hamdoun
 
+      
+      
       
