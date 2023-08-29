@@ -1,1 +1,23 @@
 
+on:
+  push:
+    branches:
+      - master
+
+
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       
+      - name: 'Testing githup action'
+        run:   pwd
+
+      - name: 'Testng Printing'
+        run: echo hamdoun
+
+      
